@@ -100,7 +100,7 @@ export function renderHomePage() {
         <div class="dealership-grid">
           <div class="dealership-card">
             <div class="dealership-logo">
-              <img src="https://placehold.co/200x80?text=Shine" alt="Shine Sanitaryware" />
+              <img src="image/shine.png alt="Shine Sanitaryware" />
             </div>
             <h3 class="dealership-name">Shine Sanitaryware</h3>
             <p class="dealership-description">Exclusive dealer for premium bathroom fixtures and fittings.</p>
@@ -109,7 +109,7 @@ export function renderHomePage() {
           
           <div class="dealership-card">
             <div class="dealership-logo">
-              <img src="https://placehold.co/200x80?text=Berger" alt="Berger Paints" />
+              <img src="image/Berger.png" alt="Berger Paints" />
             </div>
             <h3 class="dealership-name">Berger Paints</h3>
             <p class="dealership-description">Authorized distributor of high-quality paints and coatings.</p>
@@ -118,7 +118,7 @@ export function renderHomePage() {
           
           <div class="dealership-card">
             <div class="dealership-logo">
-              <img src="https://placehold.co/200x80?text=Ghorahi" alt="Ghorahi Cement" />
+              <img src="image/Sagarmatha.jpg" alt="Ghorahi Cement" />
             </div>
             <h3 class="dealership-name">Ghorahi Cement</h3>
             <p class="dealership-description">Supplying the finest quality cement for construction projects.</p>
