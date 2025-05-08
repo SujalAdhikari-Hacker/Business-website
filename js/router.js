@@ -4,6 +4,7 @@ import { renderProductsPage } from './pages/products.js';
 import { renderServicesPage } from './pages/services.js';
 import { renderDealershipsPage } from './pages/dealerships.js';
 import { renderContactPage } from './pages/contact.js';
+import { renderSuccessPage } from './pages/success.js';
 
 export const router = {
   routes: {
@@ -14,6 +15,7 @@ export const router = {
     '/services': renderServicesPage,
     '/dealerships': renderDealershipsPage,
     '/contact': renderContactPage,
+    '/contact/success': renderSuccessPage
   },
   
   init() {
@@ -61,8 +63,13 @@ export const router = {
       });
       
       // Update document title
-      const pageTitle = document.querySelector(`[data-page="${pathname.replace('/', '')}"]`)?.textContent || 'Home';
-      document.title = `${pageTitle} | Nepal Hardware Wholesale`;
+      let pageTitle = 'Home';
+      if (pathname === '/contact/success') {
+        pageTitle = 'Thank You';
+      } else {
+        pageTitle = document.querySelector(`[data-page="${pathname.replace('/', '')}"]`)?.textContent || 'Home';
+      }
+      document.title = `${pageTitle} | Menaka Brothers`;
     }
   },
   
