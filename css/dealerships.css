@@ -1,0 +1,177 @@
+/* Dealerships Page Specific Styles */
+.dealerships-hero {
+  position: relative;
+  height: 50vh;
+  min-height: 400px;
+  background: linear-gradient(rgba(16, 42, 67, 0.7), rgba(16, 42, 67, 0.7)), url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-neutral-0);
+  text-align: center;
+}
+
+.dealerships-hero-content {
+  max-width: 800px;
+  padding: var(--space-4);
+}
+
+.dealerships-hero-title {
+  font-size: 3rem;
+  margin-bottom: var(--space-4);
+  color: var(--color-neutral-0);
+}
+
+.dealerships-intro {
+  padding: var(--space-8) 0;
+  background-color: var(--color-neutral-50);
+  text-align: center;
+}
+
+.dealerships-intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.brand-section {
+  padding: var(--space-8) 0;
+}
+
+.brand-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-5);
+  background-color: var(--color-neutral-0);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-8);
+}
+
+.brand-card:last-child {
+  margin-bottom: 0;
+}
+
+.brand-image {
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.brand-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-content {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-logo {
+  height: 60px;
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo img {
+  max-height: 100%;
+  max-width: 200px;
+}
+
+.brand-title {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-3);
+  color: var(--color-primary-700);
+}
+
+.brand-description {
+  color: var(--color-neutral-600);
+  margin-bottom: var(--space-4);
+}
+
+.brand-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-4) 0;
+}
+
+.brand-feature {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--space-2);
+}
+
+.brand-feature i {
+  color: var(--color-accent-500);
+  margin-right: var(--space-2);
+  margin-top: 5px;
+}
+
+.benefits-section {
+  padding: var(--space-8) 0;
+  background-color: var(--color-neutral-50);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-5);
+}
+
+.benefit-card {
+  background-color: var(--color-neutral-0);
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform var(--transition-medium);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  color: var(--color-accent-500);
+  margin-bottom: var(--space-3);
+}
+
+.benefit-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-3);
+  color: var(--color-primary-700);
+}
+
+.benefit-description {
+  color: var(--color-neutral-600);
+}
+
+@media (max-width: 768px) {
+  .dealerships-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .brand-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .brand-image {
+    height: 200px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
