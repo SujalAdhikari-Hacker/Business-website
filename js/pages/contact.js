@@ -61,25 +61,26 @@ export function renderContactPage() {
             </div>
             
             <div class="contact-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3499.878778260658!2d80.5755294!3d28.6933613!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a1ecce1056cc77%3A0x99fe74f117bd2f17!2sManaka%20Brothers!5e0!3m2!1sen!2snp!4v1710861477044!5m2!1sen!2snp&z=19" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.878778260658!2d80.57552939999999!3d28.6933613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a1ecce1056cc77%3A0x99fe74f117bd2f17!2sManaka%20Brothers!5e0!3m2!1sen!2snp!4v1710861477044!5m2!1sen!2snp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           
           <div class="contact-form-container">
             <h2 class="contact-form-title">Send Us a Message</h2>
             <form 
-              class="contact-form" 
-              name="contact" 
-              method="POST" 
+              class="contact-form"
+              name="contact"
+              method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
+              action="/contact/success"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <p class="hidden">
                 <label>
                   Don't fill this out if you're human: <input name="bot-field" />
                 </label>
               </p>
-              <input type="hidden" name="form-name" value="contact" />
               
               <div class="form-group">
                 <label for="name" class="form-label">Your Name</label>
